@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="z">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -12,18 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="道生一，一生二，二生三，三生万物。">
+    <meta name="description" content="&lt;br /&gt;道生一，一生二，二生三，三生万物。&lt;br /&gt;">
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Arthas | 世·界">
-    <meta name="twitter:description" content="道生一，一生二，二生三，三生万物。">
+    <meta name="twitter:description" content="&lt;br /&gt;道生一，一生二，二生三，三生万物。&lt;br /&gt;">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="Arthas | 世·界">
-    <meta property="og:description" content="道生一，一生二，二生三，三生万物。">
+    <meta property="og:description" content="&lt;br /&gt;道生一，一生二，二生三，三生万物。&lt;br /&gt;">
 
     
-    <meta name="author" content="John Doe">
+    <meta name="author" content="Arthas">
     
     <link rel="stylesheet" href="/css/vno.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
@@ -37,7 +37,7 @@
     <link rel="alternate" type="application/rss+xml" title="Arthas" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://yoursite.com/favourite/index.html"/>
+    <link rel="canonical" href="https://arthas47.github.io/favourite/index.html"/>
 
                  
 </head>
@@ -62,14 +62,14 @@
         <span class="panel-cover__subtitle panel-subtitle">世·界</span>
         
         <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">道生一，一生二，二生三，三生万物。</p>
+        <p class="panel-cover__description"><br />道生一，一生二，二生三，三生万物。<br /></p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
 
         <div class="navigation-wrapper">
           <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
             
               <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
             
@@ -92,7 +92,7 @@
   <!-- Github -->
   
   <li class="navigation__item">
-    <a href="https://github.com/Arthas47" title="GitHub" target="_blank">
+    <a href="https://github.com/Arthas47" title="查看我的GitHub主页" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -155,10 +155,32 @@
 </article>
 
 
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'Arthas'; 
+      
+  var disqus_identifier = '/favourite/index.html';
+  var disqus_title = '';
+  var disqus_url = 'https://arthas47.github.io/favourite/index.html';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
             <footer class="footer">
     <span class="footer__copyright">
-        &copy; 2018 John Doe - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+        &copy; 2018 Arthas - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
        
     </span>
     <span class="footer__copyright">
@@ -198,7 +220,36 @@
 
 
     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     
-    
+<div id="hexo-helper-live2d">
+  <canvas id="live2dcanvas" width="150" height="300"></canvas>
+</div>
+<style>
+  #live2dcanvas{
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    opacity:0.7;
+    right: 0px;
+    z-index: 999;
+    pointer-events: none;
+    bottom: -20px;
+  }
+</style>
+<script type="text/javascript" src="/live2d/device.min.js"></script>
+<script type="text/javascript">
+const loadScript = function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";"undefined"!=typeof b&&(a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,b()}:a.onload=function(){b()});a.src=c;document.body.appendChild(a)};
+(function(){
+  if((typeof(device) != 'undefined') && (device.mobile())){
+    document.getElementById("live2dcanvas").style.width = '75px';
+    document.getElementById("live2dcanvas").style.height = '150px';
+  }else
+    if (typeof(device) === 'undefined') console.error('Cannot find current-device script.');
+  loadScript("/live2d/script.js", function(){loadlive2d("live2dcanvas", "/live2d/assets/z16.model.json", 0.5);});
+})();
+</script>
+
+
 </body>
 </html>
